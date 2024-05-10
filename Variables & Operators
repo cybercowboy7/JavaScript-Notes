@@ -1,0 +1,18 @@
+console.log()
+  - Command to print something to the developer in your browser.
+
+- Can run JavaScript via the browser or outside the browser
+
+<script>    </script>
+- Tag used to run JavaScript code inside of the browser
+
+<script src="javascript.js"></script>
+- This is another way to include JS through an external script. Similar to linking external
+CSS docs to website
+
+
+VARIABLES:
+
+- Think of them as storage containers for data in code
+- 3 ways to create a variable: var/let/const statements
+- 
