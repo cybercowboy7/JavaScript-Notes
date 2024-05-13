@@ -15,4 +15,29 @@ VARIABLES:
 
 - Think of them as storage containers for data in code
 - 3 ways to create a variable: var/let/const statements
-- 
+- Can define multiple variables in one statement but not recommended.
+Example for a good multi variable declaration:
+
+let user = 'John';
+let age = 25;
+let message = 'Hello':
+
+Variable Naming:
+- Name must contain only letters, digits, or the symbols $ and _
+- The first character must not be a digit
+- Cannot name a variable a name that is reserved and used by the language itself
+- Variable names should have meaning that describes the data that it stores
+
+Constants:
+- To declare a constant(unchanging) variable, use const instead of let
+Example:
+const myBirthday = '18.04.1982';
+- Uppercase constants:
+  - Use constants for difficult values that are known before execution such as Hex colors
+  - const COLOR_RED = '#F00';    (much easier to remmember COLOR_RED than the hex form)
+
+let userName = 'John';
+let admin = userName;
+alert(Admin);
+
+
