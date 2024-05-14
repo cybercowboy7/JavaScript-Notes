@@ -1,1 +1,66 @@
+Strings:
+- Piece of text
+- Same idea of declaring variables with numbers as the value
+  const string = 'This is a test';
+  console.log(string);
+  OUTPUT: This is a test
+- Can wrap strings in Single ', ", `
+  - Strings declared using backticks are a called template literal
+    - You can embed JavaScript in them
+    - You can declare template literals over multiple lines using ${ }
+    Example:
+      const name = "Chris";
+      const greeting = `Hello, ${name}`;
+      console.log(greeting);
+      OUTPUT: Hello, Chris
+Basic String Methods:
+- length : Returns the length of a string
+- charAt : Returns the character at a specified index in a string
+- charCodeAt : Returns the code of the character at a specified index in a string
+- at : Returns the character at a specified index in a string
+- [] : Example- 
+    let text = "Hello World";
+    let char = text[0]
+    console.log(char);
+    OUTPUT: H
+- slice : Extracts a part of a string and returns the extracted part in a new string.
+Example
+  let test = "test";
+  let part = test.slice(0, 3);
+  console.log(part);
+  OUTPUT: tes
+- substring : Similar to slice. Start and end values less than 0 are treated as 0 in substring
+- substr : Similar to slice. Second parameter specifies the length of the extracted part.
+- toUpperCase : String is converted to upper case 
+- toLowerCase : String is converted to lower case
+- concat : joins two or more strings
+- trim : removes whitespace from both sides of a string
+- trimStart : removes whitespace only from the start of a string
+- trimEnd : removes whitespace only from the end of a string
+- padStart : pads a string from the start
+Example
+    let text = "5";
+    let padded = text.padStart(4,"0");
+    console.log(padded);
+    OUTPUT: 0005
+- padEnd : pads a string from the end
+- repeat : returns a string with a number of copies of a string, returns a new string, does not change original string
+- replace : Replaces a specified value with another value in a string.
+- replaceAll : specify a reg expression instead of a string to be replaced
+- split : String can be converted to an array with this method
+
+
+
+CONDITIONALS:
+
+>/< : Greater than / Less than
+>= / <= : Greater/less than or equal to
+== : equals
+!= : not equal to
+
+strict equality:
+Values of different types are compared, they get converted to numbers (with the exclusion
+of a strict equality check).
+== cannot differentiate 0 from false and same with '' == false
+You can use a strict equality operator ===. Checks equality without type conversion
 
