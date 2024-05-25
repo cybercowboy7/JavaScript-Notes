@@ -1,0 +1,42 @@
+Function Declaration: 
+
+function sayHi() {
+  alert( "Hello" );
+}
+
+Function Expression: Stores a function within a variable
+
+let sayHi = function() {
+  alert( "Hello" );
+}
+
+Callback Functions:
+
+function ask(question, yes, no) {
+  if (confirm(question)) yes()
+}
+
+function showOk() {
+  alert( "You agreed." );
+}
+
+function showCancel () {
+  alert( "You cancelled the execution." );
+}
+
+ask("Do you agree?, showOk, showCancel);
+
+SAME FUNCTION COMPACTED:
+
+function ask(question, yes, no) {
+  if (confirm(question)) yes()
+  else no();
+
+ask(
+  "Do you agree?",
+  function() { alert("You agreed."); },
+  function() { alert(You cancelled the execution."); }
+
+KEY DIFFERENCES: Funciton expression vs declaration
+  - 
+
