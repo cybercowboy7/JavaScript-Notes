@@ -38,5 +38,7 @@ ask(
   function() { alert(You cancelled the execution."); }
 
 KEY DIFFERENCES: Funciton expression vs declaration
-  - 
+  - Function Declarations are processed before the code block is executed. They are 
+visible everywhere in the block.
+  - Function Expressions are created when the execution flow reaches them.
 
