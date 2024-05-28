@@ -1,0 +1,38 @@
+What is JS Call Stack: 
+- Keeps track of the function calls
+- Way for JS engine to keep track of its place in code that calls multiple functions
+- Works based on the LIFO (last-in-first-out) principle
+
+Example execution:
+
+function add(a, b) {
+  return a + b;
+}
+
+function average(a, b) {
+  return add(a, b) / 2;
+}
+
+let x = average(10, 20);
+
+EXPLAINED:
+- First places the global executoin context which is main() or global()
+- Then average() goes on top of main()
+- Then add() goes on top of average()
+- After the add() function is executed it is popped off,
+then the average() function is executed and popped off, and then main()
+
+Stack Overflow:
+- Call stack has a fixed size whether the host environment is the web browser or something
+such as node.js
+- If the number of execution contexts exceeds the size of the stack, a stack overflow error
+will occur.
+
+Asynchronous JavaScript:
+
+- JS is single-threaded meaning it only has one call stack and can only do one thing at a time
+- Asynchronous means the JS engine can execute other tasks while waiting for another task to 
+be completed. For examle:
+  - Request for data from a remote server
+  - Display a spinner
+  - When the data is available, display it on the webpage.
