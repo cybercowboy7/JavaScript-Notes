@@ -4,8 +4,12 @@
   - What functionality will it have?
   - What inputs will program have?
   - Will the user enter input or get it from somewhere else
-3. Pseudocode
+3. Divide
+  - Break problems into sub problems
+4. Pseudocode
   - Writing out logic for program in natural langauge
+
+
 
 Example of working through a problem:
 "Write a program that takes a user's input and prints the numbers from one to the number
