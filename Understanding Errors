@@ -1,0 +1,27 @@
+Breaking down an error:
+- First part of error is the type of error
+  - For example: ReferenceError
+    - ReferenceError is thrown when one refers to a variable that is not declared and/or
+    initialized within the scope.
+- Second part is the error message which tell you what is causing the message
+- Stack traces help us trace the evolution of an error 
+
+Common types of errors:
+- Syntax error
+  - Code you are trying to run is not written correctly
+  - "Uncaught SyntaxError: Invalid or unexpeected token
+
+- Reference Error
+  - Varibale does not exist within the scope
+
+- Type Error
+  - argument passed to a function is incompatible with the type expected by that operator or
+  function
+  - When attempting to modify a value that cannot be changed
+  - When attempting to use a value in an inappropriate way
+
+
+Resolving Errors:
+- Use google
+- Use the debugger
+- Utilize console.log for immediate feedback
