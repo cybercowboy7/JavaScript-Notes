@@ -1,0 +1,71 @@
+Arrays: Data structures that can store myltiple values in a single variable
+Example Array:
+const cars = ["Toyota", "Hyundai", "Kia"];
+
+- Array declarations can span multiple lines
+- You can create an array and then provide elements:
+  const cars = [];
+  cars[0] = "Toyota";
+  cars[1] = "Hyundai";
+  cars[2] = "Kia";
+
+- Converting an Array to a string
+- toString() method converts an array to a string of comma separated array values
+  const fruits = ["Banana", "Orange", "Apple"];
+  document.getElementById("demo").innerHTML = fruits.toString();
+
+- Access the whole array:
+const cars = ["Toyota", "Hyundai", "Kia"];
+document.getElementById("demo").innerHTML = cars;
+
+- Arrays use numbers to aacess its elements starting with 0 being the first element
+const pers = ["John", "Kyle", "Alex"];
+console.log(pers[0]);
+OUTPUT: John
+
+- Array Properties and Methods
+  - sort(): sorts the array
+  - length(): returns the number of elements in the array
+  - You can acces the last Array element by attaching - 1 to the end
+  of .length
+  - Array at(): Returns an indexed element from an array
+  - Array join(): Joins all array elements into a string but you can specify the separator
+  - Array pop(): Removes the last element from an array
+  - Array push(): Returns the new array length
+  - Array shift(): Removes the first array element and shifts all other elemenets to lower
+  index
+  - Array unshift(): Adds a new element to an array (at the beginning), and unshifts older
+  older elements
+  - Array concat(): Creates a new array by merging existing arrays
+  - Array copyWithin(): Copies array elements to another position in an array
+  - 
+
+- Looping Array Elements:
+
+const fruits = ["Banana", "Orange", "Apple", "Mango"];
+let fLen = fruits.length;
+
+let text = "<ul>";
+for (let i = 0; i < fLen; i++) {
+  text += "<li>" + fruits[i] "</li>";
+}
+text += "</ul>";
+
+You can also use the Array.forEach() function:
+
+const fruits = ["Banana", "Orange", "Apple", "Mango"];
+
+let text = "<ul>";
+fruits.forEach(myFunction);
+text += "</ul>";
+
+function myFunction(value) {
+  text += "<li>" + value + "</li>";
+} 
+
+
+- Adding Array Elements
+  - push() method
+const fruits = ["banana", "orange", "apple"];
+fruits.push("Lemon"); // Adds a new elements to fruits
+  
